@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 
+import bird1 from './bird1.png'; // with import
+
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -31,7 +33,6 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>🎄🎈🏉</h1>
         <SignOut />
       </header>
 
@@ -49,6 +50,11 @@ function SignIn() {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
   }
+
+  // const signInWithGithub = () => {
+  //   const provider = new firebase.auth.GithubAuthProvider();
+  //   auth.signInWithPopup(provider);
+  // }
 
   return (
     <>
@@ -105,7 +111,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type here..." />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>🚀</button>
 
     </form>
   </>)
