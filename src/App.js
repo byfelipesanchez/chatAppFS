@@ -33,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <header>
+        <h1> Let's Chat! 📌🚀📞</h1>
         <SignOut />
       </header>
 
@@ -81,6 +82,8 @@ function ChatRoom() {
 
   const [formValue, setFormValue] = useState('');
 
+
+  // const deleteMessages = authenticated &&
 
   const sendMessage = async (e) => {
     e.preventDefault();
