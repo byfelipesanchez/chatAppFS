@@ -8,9 +8,10 @@ body {
   margin: 0 auto;
 }
 
+
 .App header {
   background-color: #181717;
-  height: 10vh;
+  height: 12vh;
   min-height: 50px;
   color: white;
   position: fixed;
@@ -103,19 +104,37 @@ button:disabled {
 .sign-in {
   color: #282c34;
   background: white;
+  border-radius: 16px;
   max-width: 400px;
   margin: 0 auto;
 }
 
+hr{
+  max-width: 85%;
+}
 
+.p-intro {
 
+  color: white;
+  max-width: 400px;
+  font-size:x-large;
+  margin: 0 auto;
+}
+
+.p-intro2 {
+
+  color: white;
+  max-width: 400px;
+  font-size:medium;
+  margin: 0 auto;
+}
 
 ul, li {
   text-align: left;
   list-style: none;
 }
 
-p {
+.p-class {
   max-width: 500px;
   margin-bottom: 12px;
   line-height: 24px;

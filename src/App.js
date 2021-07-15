@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 
-import bird1 from './bird1.png'; // with import
+// import bird1 from './bird1.png'; // with import
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -59,8 +59,27 @@ function SignIn() {
 
   return (
     <>
+
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p></p>
+      <div>
+        <br />
+        <hr  />  
+        <br />
+      </div>
+      <p className='p-intro'>Chat App FS</p>
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />        <br />
+        <br />
+        <br />
+        <br />
+        <p className='p-intro2'>@byfelipesanchez on GitHub</p>
+         </div>
     </>
   )
 
@@ -114,7 +133,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type here..." />
 
-      <button type="submit" disabled={!formValue}>🚀</button>
+      <button type="submit"  disabled={!formValue}>🚀</button>
 
     </form>
   </>)
@@ -129,7 +148,7 @@ function ChatMessage(props) {
   return (<>
     <div className={`message ${messageClass}`}>
       <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
-      <p>{text}</p>
+      <p className='p-class'>{text}</p>
     </div>
   </>)
 }
