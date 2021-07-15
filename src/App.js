@@ -23,6 +23,11 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
+// const delet = db.collection("messages").delete().then(() => {
+//   console.log("Document successfully deleted!");
+// }).catch((error) => {
+//   console.error("Error removing document: ", error);
+// });
 
 
 function App() {
@@ -35,6 +40,7 @@ function App() {
       <header>
         <h1> Let's Chat! 📌 </h1>
         <SignOut />
+        {/* <DeleteAll /> */}
       </header>
 
       <section>
@@ -91,6 +97,11 @@ function SignOut() {
   )
 }
 
+// function DeleteAll(){
+//   return delet() && (
+//     <button className='delete-messages' onClick={() => delet.DeleteAll()}> Delete </button>
+//   )
+// }
 
 function ChatRoom() {
   const dummy = useRef();
