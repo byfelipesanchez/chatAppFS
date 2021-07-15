@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1> Let's Chat! 📌🚀📞</h1>
+        <h1> Let's Chat! 📌 </h1>
         <SignOut />
       </header>
 
