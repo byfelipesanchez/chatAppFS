@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/byfelipesanchez/chatAppFS%20/static/css/main.a3267dda.chunk.css",
+    "main.js": "/byfelipesanchez/chatAppFS%20/static/js/main.c280bb58.chunk.js",
+    "main.js.map": "/byfelipesanchez/chatAppFS%20/static/js/main.c280bb58.chunk.js.map",
+    "runtime-main.js": "/byfelipesanchez/chatAppFS%20/static/js/runtime-main.cc21cc8e.js",
+    "runtime-main.js.map": "/byfelipesanchez/chatAppFS%20/static/js/runtime-main.cc21cc8e.js.map",
+    "static/js/2.d650d4cd.chunk.js": "/byfelipesanchez/chatAppFS%20/static/js/2.d650d4cd.chunk.js",
+    "static/js/2.d650d4cd.chunk.js.map": "/byfelipesanchez/chatAppFS%20/static/js/2.d650d4cd.chunk.js.map",
+    "static/js/3.e57a5047.chunk.js": "/byfelipesanchez/chatAppFS%20/static/js/3.e57a5047.chunk.js",
+    "static/js/3.e57a5047.chunk.js.map": "/byfelipesanchez/chatAppFS%20/static/js/3.e57a5047.chunk.js.map",
+    "index.html": "/byfelipesanchez/chatAppFS%20/index.html",
+    "static/css/main.a3267dda.chunk.css.map": "/byfelipesanchez/chatAppFS%20/static/css/main.a3267dda.chunk.css.map",
+    "static/js/2.d650d4cd.chunk.js.LICENSE.txt": "/byfelipesanchez/chatAppFS%20/static/js/2.d650d4cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc21cc8e.js",
+    "static/js/2.d650d4cd.chunk.js",
+    "static/css/main.a3267dda.chunk.css",
+    "static/js/main.c280bb58.chunk.js"
+  ]
+}
