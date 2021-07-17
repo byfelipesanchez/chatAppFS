@@ -2,11 +2,14 @@ import React, { useRef, useState } from 'react';
 import './App.css';
 
 // import bird1 from './bird1.png'; // with import
-
+import { BrowserRouter as Router, Route, Switch,  useHistory } from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+// import { NavigationContainer, createStackNavigator } from 'react-navigation';
 import 'firebase/auth';
 import 'firebase/analytics';
+import Todos from './index';
+import Todo from './pages/Todopage'
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -37,18 +40,53 @@ function App() {
 
   return (
     <div className="App">
+      <Router>
+      <Switch>
+        <Route exact path="./index.js" ><Todos /></Route>
+        <Route path="/todo"><Todo /></Route>
+      </Switch>
+    </Router>
       <header>
-        <h1> Let's Chat! 📌 </h1>
+        <h1>
+          <button
+          onClick={Todos}
+          >
+          </button>
+      </h1>
         <SignOut />
-        {/* <DeleteAll /> */}
       </header>
+      <p>
 
+      </p>
       <section>
         {user ? <ChatRoom /> : <SignIn />}
       </section>
 
     </div>
   );
+}
+
+
+function ChangeTodoScreen() {
+
+  const history = useHistory({forceRefresh:true});
+
+  const handlePush = () => {
+    history.push("./pages/Todopage.jsx")
+  }
+
+  // history.push('./pages/Todopage')
+
+  return (
+      <div>
+          <button
+          onClick={handlePush}
+          >
+              click
+          </button>
+      </div>
+  );
+
 }
 
 function SignIn() {
@@ -80,9 +118,8 @@ function SignIn() {
         <br />
         <br />
         <br />
-        <br />        <br />
-        <br />
-        <br />
+        <br />        <br />        
+
         <br />
         <p className='p-intro2'>@byfelipesanchez on GitHub</p>
          </div>
@@ -137,6 +174,8 @@ function ChatRoom() {
       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
 
       <span ref={dummy}></span>
+
+
 
     </main>
 
