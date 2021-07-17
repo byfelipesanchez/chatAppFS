@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
+import GithubCorner from "react-github-corner";
+
 // import bird1 from './bird1.png'; // with import
 import { BrowserRouter as Router, Route, Switch,  useHistory, Link, Redirect, NavLink} from 'react-router-dom';
 import firebase from 'firebase/app';
@@ -37,9 +39,20 @@ function App() {
   const [user] = useAuthState(auth);
 
   return (
+
     <div className="App">
       <header>
         <SignOut />
+      <div>
+      <GithubCorner
+                    href="https://github.com/byfelipesanchez"
+                    bannerColor="#64CEAA"
+                    octoColor="#fff"
+                    width={80}
+                    height={80}
+                    direction="right"
+                />
+      </div>
       </header>
 
       <section>
