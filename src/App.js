@@ -1,16 +1,13 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 import GithubCorner from "react-github-corner";
-
-// import bird1 from './bird1.png'; // with import
 import { BrowserRouter as Router, Route, Switch,  useHistory, Link, Redirect, NavLink} from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import { Component } from 'react';import 'firebase/auth';
+import { Component } from 'react';
+import 'firebase/auth';
 import TodoList from './pages/Todopage'
 import 'firebase/analytics';
-// import Todos from './index';
-// import Todo from './pages/Todopage'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
