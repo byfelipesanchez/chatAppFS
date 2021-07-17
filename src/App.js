@@ -1,16 +1,14 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
-
 // import bird1 from './bird1.png'; // with import
-import { BrowserRouter as Router, Route, Switch,  useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch,  useHistory, Link, Redirect, NavLink} from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-// import { NavigationContainer, createStackNavigator } from 'react-navigation';
-import 'firebase/auth';
+import { Component } from 'react';import 'firebase/auth';
+import TodoList from './pages/Todopage'
 import 'firebase/analytics';
-import Todos from './index';
-import Todo from './pages/Todopage'
-
+// import Todos from './index';
+// import Todo from './pages/Todopage'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
@@ -40,24 +38,10 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-      <Switch>
-        <Route exact path="./index.js" ><Todos /></Route>
-        <Route path="/todo"><Todo /></Route>
-      </Switch>
-    </Router>
       <header>
-        <h1>
-          <button
-          onClick={Todos}
-          >
-          </button>
-      </h1>
         <SignOut />
       </header>
-      <p>
 
-      </p>
       <section>
         {user ? <ChatRoom /> : <SignIn />}
       </section>
@@ -114,12 +98,16 @@ function SignIn() {
       <div>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />        <br />        
-
+    <Router>
+      <div>
+       <Link to="/todos">...</Link>
+        <Switch>
+          <Route path="/todos">
+            <TodoList />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
         <br />
         <p className='p-intro2'>@byfelipesanchez on GitHub</p>
          </div>

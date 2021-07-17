@@ -9,6 +9,7 @@ body {
 }
 
 
+
 .App header {
   background-color: #181717;
   height: 12vh;
@@ -111,6 +112,10 @@ button:disabled {
 
 hr{
   max-width: 85%;
+}
+
+.clear-all {
+  background-color: white;
 }
 
 .p-intro {
