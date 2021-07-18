@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import './App.css';
 
 // import bird1 from './bird1.png'; // with import
-
+import GithubCorner from "react-github-corner";
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -40,6 +40,14 @@ function App() {
       <header>
         <h1> Let's Chat! 📌 </h1>
         <SignOut />
+        <GithubCorner
+                    href="https://github.com/byfelipesanchez?tab=repositories"
+                    bannerColor="#64CEAA"
+                    octoColor="#fff"
+                    width={80}
+                    height={80}
+                    direction="right"
+                />
         {/* <DeleteAll /> */}
       </header>
 
