@@ -41,7 +41,7 @@ function App() {
         <h1> Let's Chat! 📌 </h1>
         <SignOut />
         <GithubCorner
-                    href="https://github.com/byfelipesanchez?tab=repositories"
+                    href="https://byfelipesanchez.github.io/todoAppFS/"
                     bannerColor="#64CEAA"
                     octoColor="#fff"
                     width={80}
